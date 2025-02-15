@@ -188,6 +188,7 @@ async function generate(prevResult, prevAnalysis, newResult, fileDetails = null)
         res = await axios({
             url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key,
             method: "post",
+            timeout: 60000, 
             data: {
                 "contents": [{
                     "parts": [{
@@ -227,6 +228,7 @@ async function generate(prevResult, prevAnalysis, newResult, fileDetails = null)
         res = await axios({
             url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key,
             method: "post",
+            timeout: 60000, 
             data: {
                 "contents": [{
                     "parts": [{
