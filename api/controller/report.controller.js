@@ -212,7 +212,7 @@ async function generate(prevResult, prevAnalysis, newResult, fileDetails = null)
             - Skincare tips, meditation, and relaxation techniques if required.
         4. **Precaution Plan**: 
             - Information on any at-risk diseases and precautions the patient should take.
-        Provide the result in JSON format as shown below:*important: only send response in json format as the server will crash if its not in json*(height will be in cm,weight in kg,heart rate in bpm unless specified otherwise)
+        Provide the result in JSON format as shown below:*important: only send response in json format as the server will crash if its not in json*(height will be in cm,weight in kg,heart rate in bpm unless specified otherwise. Also try to suggest different diet/lifestyle/precaution plans based on previous analysis)
         ${exampleJsonFormat}
         `;
 
