@@ -186,7 +186,7 @@ async function generate(prevResult, prevAnalysis, newResult, fileDetails = null)
         //console.log(prompt + "\n *Current report*: " + newResult);
 
         res = await axios({
-            url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key,
+            url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + api_key,
             method: "post",
             timeout: 60000, 
             data: {
@@ -226,7 +226,7 @@ async function generate(prevResult, prevAnalysis, newResult, fileDetails = null)
         //console.log(prompt + "\n *Current report*: " + newResult + "\n *Previous report*: " + prevResult + "\n *Previous analysis*: " + prevAnalysis);
 
         res = await axios({
-            url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + api_key,
+            url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + api_key,
             method: "post",
             timeout: 60000, 
             data: {
