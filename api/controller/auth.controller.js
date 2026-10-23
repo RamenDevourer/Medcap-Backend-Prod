@@ -201,7 +201,6 @@ export const updateUser = async (req, res) => {
 
 
 
-
 export const token = async (req, res) => {
     const refreshToken = req.body.token;
     if (refreshToken == null){
