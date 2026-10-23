@@ -21,10 +21,10 @@ const corsOptions = {
     origin: 'https://medcap.vercel.app',
 };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // Uncomment for localhost
-// app.use(cors());
+app.use(cors());
 
 
 mongoose
